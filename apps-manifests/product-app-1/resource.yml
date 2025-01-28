@@ -1,0 +1,7 @@
+apiVersion: example.com/v1
+kind: Foo
+metadata:
+  name: example-foo
+spec:
+  field1: "example-string"
+  field2: 42
