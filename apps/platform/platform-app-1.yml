@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: platform-app-1
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: platform
+  #  syncPolicy:
+#    automated:
+#      prune: true
+  source:
+    repoURL: git@github.com:luca-poddigue-hs/kcb-apps.git
+    targetRevision: "main"
+    path: apps-manifests/platform-app-1
+    kustomize:
+      namePrefix: kustomize-
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: platform
