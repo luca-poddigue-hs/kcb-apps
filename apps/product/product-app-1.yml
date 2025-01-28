@@ -7,6 +7,9 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: product
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
   source:
     repoURL: https://github.com/luca-poddigue-hs/kcb-apps.git
     targetRevision: "main"
