@@ -1,27 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: platform-app-1
+  name: product-app-2
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
-  annotations:
-    argocd.argoproj.io/sync-wave: "100"
 spec:
-  project: platform
+  project: product
   syncPolicy:
-    automated:
-      prune: true
     syncOptions:
       - CreateNamespace=true
-    retry:
-      limit: -1
   source:
     repoURL: https://github.com/luca-poddigue-hs/kcb-apps.git
     targetRevision: "main"
-    path: apps-manifests/platform-app-1
+    path: apps-manifests/product-app-2
     kustomize:
-      namePrefix: kustomize-
+      namePrefix: product-app-2-
   destination:
     server: https://kubernetes.default.svc
-    namespace: platform
+    namespace: product

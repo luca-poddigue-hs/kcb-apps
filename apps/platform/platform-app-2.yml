@@ -19,7 +19,7 @@ spec:
     targetRevision: "main"
     path: apps-manifests/platform-app-2
     kustomize:
-      namePrefix: kustomize-
+      namePrefix: platform-app-2-
   destination:
     server: https://kubernetes.default.svc
     namespace: platform
