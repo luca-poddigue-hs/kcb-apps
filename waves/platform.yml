@@ -3,8 +3,11 @@ kind: Application
 metadata:
   name: platform-applications
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
   annotations:
     argocd.argoproj.io/sync-wave: "100"
+    argocd.argoproj.io/ignore-healthcheck: "false"
 spec:
   project: default
   syncPolicy:
