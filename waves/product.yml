@@ -7,6 +7,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "200"
 spec:
   project: default
+  syncPolicy:
+    automated:
+      prune: true
   source:
     repoURL: https://github.com/luca-poddigue-hs/kcb-apps.git
     targetRevision: "main"
