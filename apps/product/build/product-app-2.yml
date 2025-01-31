@@ -13,9 +13,7 @@ spec:
   source:
     repoURL: https://github.com/luca-poddigue-hs/kcb-apps.git
     targetRevision: "main"
-    path: apps-manifests/product-app-2
-    kustomize:
-      namePrefix: product-app-2-
+    path: apps-manifests/product/product-app-2/build
   destination:
     server: https://kubernetes.default.svc
     namespace: product

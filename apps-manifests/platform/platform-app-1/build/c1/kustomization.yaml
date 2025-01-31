@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - nginx.yml
   - crd.yml
+namePrefix: platform-app-1-build-c1-

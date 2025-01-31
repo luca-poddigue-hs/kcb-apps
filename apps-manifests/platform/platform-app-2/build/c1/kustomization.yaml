@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - resource.yml
   - nginx.yml
+namePrefix: platform-app-2-build-c1-
