@@ -8,6 +8,8 @@ metadata:
 spec:
   project: platform
   syncPolicy:
+    automated:
+      prune: true
     syncOptions:
       - CreateNamespace=true
     retry:
