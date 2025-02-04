@@ -10,8 +10,8 @@ metadata:
 spec:
   project: platform
   syncPolicy:
-#    automated:
-#      prune: true
+    automated:
+      prune: true
     syncOptions:
       - CreateNamespace=true
     retry:

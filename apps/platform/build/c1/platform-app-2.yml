@@ -10,12 +10,12 @@ metadata:
 spec:
   project: platform
   syncPolicy:
-    automated:
-      prune: true
+#    automated:
+#      prune: true
     syncOptions:
       - CreateNamespace=true
     retry:
-      limit: 20
+      limit: -1
   source:
     repoURL: https://github.com/luca-poddigue-hs/kcb-apps.git
     targetRevision: "main"
