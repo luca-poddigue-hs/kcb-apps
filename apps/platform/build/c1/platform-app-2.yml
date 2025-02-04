@@ -15,7 +15,7 @@ spec:
     syncOptions:
       - CreateNamespace=true
     retry:
-      limit: 10
+      limit: 20
   source:
     repoURL: https://github.com/luca-poddigue-hs/kcb-apps.git
     targetRevision: "main"
