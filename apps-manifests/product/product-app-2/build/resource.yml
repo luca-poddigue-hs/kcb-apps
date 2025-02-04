@@ -3,5 +3,5 @@ kind: Foo
 metadata:
   name: example-foo
 spec:
-  field1: "example-string-2"
+  field1: "example-string-2222"
   field2: 42
