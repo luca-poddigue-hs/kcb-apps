@@ -19,7 +19,7 @@ spec:
   source:
     repoURL: https://github.com/luca-poddigue-hs/kcb-apps.git
     targetRevision: "main"
-    path: apps-manifests/platform/platform-app-1/build/c1
+    path: apps-manifests/platform/platform-app-1/build
   destination:
     server: https://kubernetes.default.svc
     namespace: platform
